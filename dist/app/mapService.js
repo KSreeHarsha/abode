@@ -121,7 +121,6 @@ mapMod // = angular.module('myApp.mapServices',[])
     return [marker, infowindow];
   }
 
-  //----------------------------------------------------------------------------------
   //Clear the markers on the map
   var clearMarkers = function (markerArr) {
       for (var i = 0; i < markerArr; i++){
@@ -135,7 +134,6 @@ mapMod // = angular.module('myApp.mapServices',[])
       }
     }
 
-  //----------------------------------------------------------------------------------
   //Drop a marker with LABEL
   var dropMarkerWithLabel = function (coordinates, title) {
     var latLng = {lat: coordinates.latitude, lng: coordinates.longitude};
@@ -186,8 +184,8 @@ mapMod // = angular.module('myApp.mapServices',[])
     var radius = radius || 4000;
     var latLng = {lat: coordinates.latitude, lng: coordinates.longitude};
 
-    // console.log('radius:', radius);
-    // console.log('latLng:', latLng);
+    console.log('radius:', radius);
+    console.log('latLng:', latLng);
 
     if(circle) { circle.setMap(null); }
     circle = new google.maps.Circle({

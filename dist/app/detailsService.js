@@ -82,7 +82,6 @@ details
   // }
 
 
-  //----------------------------------------------------------------------------------
   //Creates objects that can be displayed in the amenities and attractions sections.
   //The dictionary argument determines which category it applies to
 
